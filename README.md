@@ -1,5 +1,7 @@
 # GitHub CI/CD Pipeline Monitor (Ruby)
 
+<img alt="ServicePreview.png" data-hpc="true" src="https://github.com/NhatMNTran/CiCdMonitor/blob/master/ServicePreview.png?raw=true" style="max-width: 100%;">
+
 A lightweight Ruby web application that monitors GitHub Actions workflow runs for a repository and displays real-time CI/CD pipeline status in a simple dashboard.
 
 Built using Ruby and the Sinatra web framework with the GitHub API via Octokit.
