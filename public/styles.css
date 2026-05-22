@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #1f2937;
+    color: white;
+}
+
+tr:hover {
+    background: #f3f4f6;
+}
+
+.status {
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.success {
+    background: #16a34a;
+}
+
+.failure {
+    background: #dc2626;
+}
+
+.cancelled {
+    background: #6b7280;
+}

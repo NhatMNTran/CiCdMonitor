@@ -1,0 +1,39 @@
+<h1>GitHub CI/CD Pipeline Monitor</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Workflow</th>
+      <th>Status</th>
+      <th>Conclusion</th>
+      <th>Branch</th>
+      <th>Commit</th>
+      <th>Actor</th>
+      <th>Updated</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @runs.each do |run| %>
+      <tr>
+        <td><%= run[:name] %></td>
+        <td><%= run[:status] %></td>
+        <td>
+          <span class="status <%= run[:conclusion] %>">
+            <%= run[:conclusion] || 'in_progress' %>
+          </span>
+        </td>
+        <td><%= run[:branch] %></td>
+        <td><%= run[:commit] %></td>
+        <td><%= run[:actor] %></td>
+        <td><%= run[:updated_at] %></td>
+        <td>
+          <a href="<%= run[:url] %>" target="_blank">
+            Open
+          </a>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
